@@ -1,4 +1,4 @@
-# Fluentd event to Graphite queue plugin like StatD.
+# Fluent event to Graphite plugin (like statsd ).
 
 # Installation
 
@@ -11,6 +11,8 @@ $ fluent-gem install fluent-plugin-graphite
 ```
 <match graphite>
   type graphite
+  host localhost # optional
+  port 2003 # optional
 </match>
 ```
 
