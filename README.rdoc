@@ -1,0 +1,22 @@
+= Fluentd event to Graphite queue plugin like StatD.
+
+= Installation
+
+  $ fluent-gem install fluent-plugin-graphite
+
+= Usage
+
+    <match graphite>
+      type graphite
+    </match>
+
+    fluent_logger.post('graphite', {
+      :key => 'mykeyname',
+      :type => 'count',
+      :value => 1
+    })
+
+= Copyright
+
+Copyright:: Copyright (c) 2012- Yuichi Tateno
+License::   Apache License, Version 2.0
